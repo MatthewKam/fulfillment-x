@@ -1,71 +1,71 @@
 @font-face {
   font-family: Aeonik-Air;
-  src: url("/assets/fonts/Aeonik-Air.otf");
+  src: url("assets/fonts/Aeonik-Air.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-AirItalic;
-  src: url("/assets/fonts/Aeonik-AirItalic.otf");
+  src: url("assets/fonts/Aeonik-AirItalic.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-Black;
-  src: url("/assets/fonts/Aeonik-Black.otf");
+  src: url("assets/fonts/Aeonik-Black.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-BlackItalic;
-  src: url("/assets/fonts/Aeonik-BlackItalic.otf");
+  src: url("assets/fonts/Aeonik-BlackItalic.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-Regular;
-  src: url("/assets/fonts/Aeonik-Regular.otf");
+  src: url("assets/fonts/Aeonik-Regular.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-RegularItalic;
-  src: url("/assets/fonts/Aeonik-RegularItalic.otf");
+  src: url("assets/fonts/Aeonik-RegularItalic.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-Medium;
-  src: url("/assets/fonts/Aeonik-Medium.otf");
+  src: url("assets/fonts/Aeonik-Medium.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-MediumItalic;
-  src: url("/assets/fonts/Aeonik-MediumItalic.otf");
+  src: url("assets/fonts/Aeonik-MediumItalic.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-Bold;
-  src: url("/assets/fonts/Aeonik-Bold.otf");
+  src: url("assets/fonts/Aeonik-Bold.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-BoldItalic;
-  src: url("/assets/fonts/Aeonik-BoldItalic.otf");
+  src: url("assets/fonts/Aeonik-BoldItalic.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-Light;
-  src: url("/assets/fonts/Aeonik-Light.otf");
+  src: url("assets/fonts/Aeonik-Light.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-LightItalic;
-  src: url("/assets/fonts/Aeonik-LightItalic.otf");
+  src: url("assets/fonts/Aeonik-LightItalic.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-Thin;
-  src: url("/assets/fonts/Aeonik-Thin.otf");
+  src: url("assets/fonts/Aeonik-Thin.otf");
   font-weight: normal;
 }
 @font-face {
   font-family: Aeonik-ThinItalic;
-  src: url("/assets/fonts/Aeonik-ThinItalic.otf");
+  src: url("assets/fonts/Aeonik-ThinItalic.otf");
   font-weight: normal;
 }
 .sctn-wrp.atf .sctn .content .left-side h1 {
@@ -590,7 +590,7 @@
   }
 }
 .sctn-wrp.benefits .sctn {
-  background: url("/assets/images/bg-benefits.png") center top no-repeat;
+  background: url("assets/images/bg-benefits.png") center top no-repeat;
   background-size: cover;
 }
 .sctn-wrp.benefits .sctn .content {
@@ -738,7 +738,7 @@
   }
 }
 .sctn-wrp.easy-steps .sctn .content .steps .step.step-1 {
-  background: url("/assets/images/bg-pick.png") center top no-repeat;
+  background: url("assets/images/bg-pick.png") center top no-repeat;
   background-size: 325px;
   margin-top: -110px;
 }
@@ -753,7 +753,7 @@
   }
 }
 .sctn-wrp.easy-steps .sctn .content .steps .step.step-2 {
-  background: url("/assets/images/bg-pack.png") center top no-repeat;
+  background: url("assets/images/bg-pack.png") center top no-repeat;
   background-size: 325px;
 }
 @media screen and (min-width: 500px) {
@@ -762,7 +762,7 @@
   }
 }
 .sctn-wrp.easy-steps .sctn .content .steps .step.step-3 {
-  background: url("/assets/images/bg-ship.png") center top no-repeat;
+  background: url("assets/images/bg-ship.png") center top no-repeat;
   background-size: 325px;
 }
 @media screen and (min-width: 500px) {
