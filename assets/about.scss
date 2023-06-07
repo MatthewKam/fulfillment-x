@@ -1,0 +1,140 @@
+
+.sctn-wrp{
+  &.team{
+    position: relative;
+    z-index: 222;
+    background-color: white;
+    padding-top: 10px;
+    .sctn{
+      margin-top: -110px;
+      
+      .team-slick{
+        @media screen and (min-width: 700px) {
+          display:none;
+        }
+      }
+      .slick-initialized .slick-slide {
+        width: 275px !important;
+      }
+      .team-static{
+        display:none;
+        @media screen and (min-width: 700px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+        
+      }
+    }
+    .profiles {
+      position:relative;
+      img {
+        width: 100%;
+        &.grey{
+          display:block;
+          width: 250px;
+          padding: 10px;
+          padding-bottom: 48px;
+          margin: 0 auto;
+          @media screen and (min-width: 700px) {
+            padding: 30px;
+            padding-bottom: 48px;
+          }
+        }
+        &.hover{
+          width: 311px;
+          display:none;
+          @media screen and (min-width: 700px) {
+            padding-top: 14px;
+            padding-left: 20px;
+          }
+        }
+      }
+      &.slick-current.slick-active,
+      &:hover{
+        img {
+          &.grey{
+            display:none;
+            @media screen and (min-width: 700px) {
+              display: block;
+            }
+          }
+          &.hover{
+            display:block;
+            @media screen and (min-width: 700px) {
+              position: absolute;
+              top: 3px;
+              left: -3px;
+            }
+          }
+        }
+      }
+      .name{
+        text-align: center;
+        margin-bottom: 70px;
+    
+        h1{
+          font-size: 34px;
+        }
+        h4{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &.gallery{
+    background-color:white;
+    .content{
+      padding-top: 50px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      align-items: center;
+      @media screen and (min-width: 800px) {
+        justify-content: space-between;
+      }
+      h3{
+        font-size: 26px;
+        text-align: center;
+        line-height: 1.6;
+        padding: 0 30px;
+        width: 100%;
+        margin-bottom: 100px;
+        span{display: block;}
+        order:3;
+        @media screen and (min-width: 800px) {
+          order:1
+        }
+        
+      }
+      img{
+        margin-bottom: 70px;
+        width: 100%;
+        @media screen and (min-width: 800px) {
+          margin-bottom:20px;
+        }
+        &.office-1{
+          order:1;
+          @media screen and (min-width: 800px) {
+            order:2;
+            width:49%;
+          }
+        }
+        &.office-2{ 
+          order:2;
+          @media screen and (min-width: 800px) {
+            order:3;
+            width:49%;
+          }
+        }
+        &.team-view{ 
+          order:4;
+        }
+      }
+    }
+  }
+}

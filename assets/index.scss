@@ -1,0 +1,767 @@
+$font: '/assets/fonts/';
+$image: '/assets/images/';
+$hoverGreen:'#72D085';
+@font-face {
+  font-family: Aeonik-Air;
+  src: url($font + 'Aeonik-Air.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-AirItalic;
+  src: url($font + 'Aeonik-AirItalic.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-Black;
+  src: url($font + 'Aeonik-Black.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-BlackItalic;
+  src: url($font + 'Aeonik-BlackItalic.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-Regular;
+  src: url($font + 'Aeonik-Regular.otf'); 
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-RegularItalic;
+  src: url($font + 'Aeonik-RegularItalic.otf'); 
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-Medium;
+  src: url($font + 'Aeonik-Medium.otf'); 
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-MediumItalic;
+  src: url($font + 'Aeonik-MediumItalic.otf'); 
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-Bold;
+  src: url($font + 'Aeonik-Bold.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-BoldItalic;
+  src: url($font + 'Aeonik-BoldItalic.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-Light;
+  src: url($font + 'Aeonik-Light.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-LightItalic;
+  src: url($font + 'Aeonik-LightItalic.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-Thin;
+  src: url($font + 'Aeonik-Thin.otf'); 
+  font-weight: normal;
+}
+@font-face {
+  font-family: Aeonik-ThinItalic;
+  src: url($font + 'Aeonik-ThinItalic.otf'); 
+  font-weight: normal;
+}
+
+
+//ATF
+.sctn-wrp.atf{
+  .sctn{
+    .content{
+      .left-side{
+        h1{
+          font-size: 40px;
+          @media screen and (min-width: 640px) {
+            font-size: 50px;
+          }
+          @media screen and (min-width: 1000px) {
+            font-size: 64px;
+          }
+          @media screen and (min-width: 1300px) {
+            font-size: 75px;
+          }
+        }
+        .get-started{
+          display:none;
+          @media screen and (min-width: 1000px) {
+            display: inline-block;
+          }
+        }
+      }
+      .full-fill{
+        img{
+          width: 295px;
+          margin-bottom: -100px;
+          margin-top: 50px;
+          margin-left: -30px;
+          @media screen and (min-width: 640px) {
+            width: 415px;
+            margin-bottom: -100px;
+            margin-left: -25px;
+          }
+          @media screen and (min-width: 1100px) {
+            margin-bottom: -130px;
+            margin-left: -25px;
+            margin-top: 70px;
+            width: 500px;
+          }
+          @media screen and (min-width: 1200px) {
+            margin-bottom: -150px;
+            margin-left: -35px;
+            margin-top: 80px;
+            width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
+//End of ATF
+
+//Connect
+.sctn-wrp.connect{
+  background-color:white;
+  position: relative;
+  z-index: 111;
+  .sctn{
+    .content{
+      text-align: center;
+      padding: 30px;
+      padding-top: 150px;
+      padding-bottom: 100px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .get-started{
+        margin-bottom: 70px;
+        @media screen and (min-width: 1000px) {
+         display:none;
+        }
+      }
+      h1{
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: .3px;
+        margin-bottom: 30px;
+        @media screen and (min-width: 640px) {
+          max-width: 1100px;
+          font-size:36px;
+        }
+      }
+      p{
+        color: #888888;
+        margin-bottom: 30px;
+        @media screen and (min-width: 640px) {
+          font-size:20px;
+        }
+        span{
+          display:inline-block;
+        }
+      }
+      video{
+        max-width: 1100px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}
+//End of Connect 
+//Categories
+.sctn-wrp.categories{
+  .sctn{
+    .content{
+      overflow: hidden;
+      @media screen and (min-width: 800px) {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      
+      .bg-color{
+        width: 100%;
+        height: 470px;
+        position: relative;
+        @media screen and (min-width: 800px) {
+          height:auto;
+        }
+
+        .box-contents{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        img{
+          &.fx-box{
+            width: 560px;
+            position: absolute;
+            bottom: -300px;
+            left: 50%;
+            transform: translate(-30%, 0%);
+            z-index: 11;
+            @media screen and (min-width: 800px) {
+              top: 0;
+              left: 45%;
+              transform: translate(-50%, 50%);
+            }
+            @media screen and (min-width: 900px) {
+              left: 40%;
+              transform: translate(-50%, 45%);
+              width: 600px;
+            }
+            @media screen and (min-width: 1000px) {
+              width: 750px;
+            }
+            @media screen and (min-width: 1100px) {
+              transform: translate(-50%, 40%);
+              left: 30%;
+              width: 850px;
+            }
+            @media screen and (min-width: 1200px) {
+              transform: translate(-50%, 50%);
+            }
+            @media screen and (min-width: 1300px) {
+              left: 25%;
+              width: 1000px;
+              transform: translate(-50%, 40%);
+            }
+            
+          }
+        }
+        img.exploding-view{
+          display:none;
+          width: 100%;
+          max-width: 500px;
+          margin: 0 auto;
+          margin-top:25px;
+          @media screen and (min-width: 800px) {
+            max-width: unset;
+            height: auto;
+            margin:0;
+            width: 450px;
+            position: absolute;
+            left: 0;
+            top: 10%;
+            z-index: 1;
+          }
+          @media screen and (min-width: 900px) {
+            width: 550px;
+          }
+          @media screen and (min-width: 1000px) {
+            width: 700px;
+          }
+          @media screen and (min-width: 1200px) {
+            width: 1000px;   
+          }
+          
+          &.fashion.mobile{
+            max-width: 600px;
+            margin-top: 0px;
+            @media screen and (min-width: 800px) {
+              max-width: unset;
+            }
+          }
+          &.electronics.mobile{
+            max-width: 600px;
+            margin-top: 70px;
+            @media screen and (min-width: 800px) {
+              max-width: unset;
+            }
+          }
+        }
+      }
+      .list-view{
+        background-color: #323232;
+        padding: 40px;
+        padding-top: 150px;
+        @media screen and (min-width: 800px) {
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 740px;
+        }
+        @media screen and (min-width: 1000px) {
+          justify-content: flex-end;
+          height: 1000px;
+        }
+        @media screen and (min-width: 1200px) {
+          justify-content: flex-end;
+          height: 1200px;
+        }
+
+        ul{
+          width:100%;
+          max-width: 300px;
+          margin: 0 auto;
+          z-index: 111;
+          position: relative;
+          @media screen and (min-width: 1000px) {
+            max-width: 400px;
+            margin:0;
+          }
+          @media screen and (min-width: 1100px) {
+            max-width: 500px;
+          }
+          @media screen and (min-width: 1300px) {
+            max-width: 600px;
+          }
+
+          li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 45px;
+            cursor:pointer;
+  
+            .svg-img{
+              width: 40px;
+              margin-right:20px;
+              fill:rgba(206, 206, 206, 0.25);
+            }
+            h3{
+              color:rgba(206, 206, 206, 0.25);;
+              font-family: 'Aeonik-Bold';
+              font-size: 24px;
+            }
+
+            &.supplements-tab{
+              &.active,
+              &:hover{
+                .svg-img{
+                  fill:#72D085;
+                }
+                h3{
+                  color:#72D085;
+                }
+              }
+            }
+            &.topicals-tab{
+              &.active,
+              &:hover{
+                .svg-img{
+                  fill:#F4D1B7;
+                }
+                h3{
+                  color:#F4D1B7;
+                }
+              }
+            }
+            &.fashion-tab{
+              &.active,
+              &:hover{
+                .svg-img{
+                  fill:#C7B7F4;
+                }
+                h3{
+                  color:#C7B7F4;
+                }
+              }
+            }
+            &.electronics-tab{
+              &.active,
+              &:hover{
+                .svg-img{
+                  fill:#B7DEF4;
+                }
+                h3{
+                  color:#B7DEF4;
+                }
+              }
+            }
+            &.accessories-tab{
+              &.active,
+              &:hover{
+                .svg-img{
+                  fill:#FFFCAE;
+                }
+                h3{
+                  color:#FFFCAE;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bg-color,.list-view{
+        @media screen and (min-width: 800px) {
+          width:50%;
+        }
+      }
+
+      &.green{
+        .bg-color{
+          background-color:#72D085;
+          img.exploding-view{
+            &.supplements{
+              &.mobile{
+                display:block;
+                @media screen and (min-width: 800px) {
+                  display:none;
+                }
+              }
+              &.desktop{
+                display:none;
+                @media screen and (min-width: 800px) {
+                  display:block;
+                  top: 5%;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.peach{
+        .bg-color{
+          background-color:#F4D1B7;
+          img.exploding-view{
+            &.topicals{
+              &.mobile{
+                display:block;
+                @media screen and (min-width: 800px) {
+                  display:none;
+                }
+              }
+              &.desktop{
+                display:none;
+                @media screen and (min-width: 800px) {
+                  display:block;
+                  width: 500px;
+                  transform: translate(-50%, 20%);
+                }
+                @media screen and (min-width: 900px) {
+                  width:500px;
+                }
+                @media screen and (min-width: 1000px) {
+                  width: 600px;
+                  transform: translate(-40%, 25%);
+                }
+                @media screen and (min-width: 1200px) {
+                  width: 700px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.lavender{
+        .bg-color{
+          background-color:#C7B7F4;
+          img.exploding-view{
+            &.fashion{
+              &.mobile{
+                display:block;
+                @media screen and (min-width: 800px) {
+                  display:none;
+                }
+              }
+              &.desktop{
+                display:none;
+                @media screen and (min-width: 800px) {
+                  display:block;
+                  width: 500px;
+                  transform: translate(-50%, 20%);
+                }
+                @media screen and (min-width: 900px) {
+                  width:500px;
+                }
+                @media screen and (min-width: 1000px) {
+                  width: 600px;
+                }
+                @media screen and (min-width: 1200px) {
+                  width: 700px;
+                  transform: translate(-40%, 20%);
+                }
+              }
+            }
+          }
+        }
+      }
+      &.lightblue{
+        .bg-color{
+          background-color:#B7DEF4;
+          img.exploding-view{
+            &.electronics{
+              &.mobile{
+                display:block;
+                @media screen and (min-width: 800px) {
+                  display:none;
+                }
+              }
+              &.desktop{
+                display:none;
+                @media screen and (min-width: 800px) {
+                  display:block;
+                  width: 500px;
+                  transform: translate(-50%, 20%);
+                }
+                @media screen and (min-width: 900px) {
+                  width:500px;
+                }
+                @media screen and (min-width: 1000px) {
+                  width: 600px;
+                }
+                @media screen and (min-width: 1200px) {
+                  width: 700px;
+                  transform: translate(-40%, 25%);
+                }
+              }
+            }
+          }
+        }
+      }
+      &.yellow{
+        .bg-color{
+          background-color:#FFFCAE;
+          img.exploding-view{
+            &.accessories{
+              &.mobile{
+                display:block;
+                @media screen and (min-width: 800px) {
+                  display:none;
+                }
+              }
+              &.desktop{
+                display:none;
+                @media screen and (min-width: 800px) {
+                  display:block;
+                  width: 450px;
+                  transform: translate(-50%, 10%);
+                }
+                @media screen and (min-width: 900px) {
+                  width:500px;
+                }
+                @media screen and (min-width: 1000px) {
+                  width: 600px;
+                }
+                @media screen and (min-width: 1200px) {
+                  width: 650px;
+                  transform: translate(-50%, 15%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//End of Categories 
+
+
+//Benefits
+.sctn-wrp.benefits{
+  .banner{
+    background-color:white;
+    text-align: center;
+    padding: 40px 50px;
+    font-size: 24px;
+    line-height: 1.5;
+    @media screen and (min-width: 500px) {
+      font-size: 36px;
+      padding: 60px 50px;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 46px;
+      padding: 100px 50px;
+    }
+  }
+  .sctn{
+    background:url($image + 'bg-benefits.png') center top no-repeat;
+    background-size:cover;
+    .content{
+      padding: 80px 40px;
+      padding-bottom: 110px;
+      @media screen and (min-width: 1000px) {
+        padding: 120px 40px;
+        padding-bottom: 200px;
+      }
+
+      ul{
+        @media screen and (min-width: 500px) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap:wrap;
+        }
+        li{
+          display: flex;
+          align-items: center;
+          color: white;
+          font-family: 'Aeonik-Bold';
+          font-size: 18px;
+          letter-spacing: .5px;
+          margin-bottom: 50px;
+          @media screen and (min-width: 500px) {
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+            text-align: center;
+            margin-bottom:60px;
+          }
+          @media screen and (min-width: 900px) {
+            width: 400px;
+            margin-bottom:100px;
+          }
+          
+          div{
+            width: 100px;
+            height: 65px;
+            text-align: center;
+            margin-right: 20px;
+            @media screen and (min-width: 500px) {
+              margin: 0;
+            }
+            @media screen and (min-width: 900px) {
+              width: 100px;
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            img{
+              
+              @media screen and (min-width: 900px) {
+                width: 100px;
+              }
+            }
+          }
+          h4{
+            width:100%;
+            @media screen and (min-width: 500px) {
+              font-size: 22px;
+              width: 100%;
+              margin-top: 30px;
+            }
+            @media screen and (min-width: 900px) {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//End of Benefits 
+//Steps
+.sctn-wrp.easy-steps{
+  background-color:white;
+  padding-top: 10px;
+  .sctn{
+    .content{
+      max-width: 1500px;
+      margin: 0 auto;
+  
+      .steps{
+        @media screen and (min-width: 1000px) {
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-start;
+          margin-top: -200px;
+        }
+        .step{
+          width: 90%;
+          max-width: 320px;
+          height: 370px;
+          margin: 0 auto;
+          border-radius: 20px;
+          box-sizing: border-box; 
+          margin-bottom: 40px;
+          text-align: center;
+          display: flex;
+          align-items: flex-end;
+
+          @media screen and (min-width: 500px) {
+            width: 440px;
+            height: 550px;
+            max-width: unset;
+          }
+          @media screen and (min-width: 1000px) {
+            height:600px;
+            width: 300px;
+            margin:0;
+          }
+          @media screen and (min-width: 1100px) {
+            height:650px;
+            width: 350px;
+          }
+          @media screen and (min-width: 1200px) {
+            height:700px;
+            width: 400px;
+          }
+          @media screen and (min-width: 1400px) {
+            height:800px;
+            width: 450px;
+          }
+
+          &.step-1{
+            background:url($image + 'bg-pick.png' )center top no-repeat;
+            background-size:325px;
+            margin-top: -110px;
+            @media screen and (min-width: 500px) {
+              background-size: cover;
+            }
+            @media screen and (min-width: 1000px) {
+              margin:0;
+            }
+          }
+          &.step-2{
+            background:url($image + 'bg-pack.png' )center top no-repeat;
+            background-size:325px;
+            @media screen and (min-width: 500px) {
+              background-size: cover;
+            }
+          }
+          &.step-3{
+            background:url($image + 'bg-ship.png' )center top no-repeat;   background-size:325px;
+            @media screen and (min-width: 500px) {
+              background-size: cover;
+            }
+          }
+
+          
+          .overlay{
+            padding: 0 30px;
+            padding-bottom: 25px;
+            
+            background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+            border-radius: 0 0 20px 20px;
+            color: white;
+            @media screen and (min-width: 500px) {
+              padding-bottom: 40px;
+            }
+          }
+          h1{
+            font-family: 'Aeonik-Bold';
+            font-size: 40px;
+            margin-bottom: 5px;
+            @media screen and (min-width: 500px) {
+              font-size: 45px;
+              margin-bottom:15px;
+            }
+          }
+          p{
+            font-size: 22px;
+            @media screen and (min-width: 500px) {
+              font-size: 26px;
+              line-height: 1.3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//End of Steps 
