@@ -390,7 +390,7 @@ p, h1, h2, h3, h4, ul, li {
 .sctn-wrp.bg-video .sctn {
   background: url("images/bg-overlay-m.png") center top no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.75);
   position: relative;
   z-index: 222;
 }
@@ -398,36 +398,54 @@ p, h1, h2, h3, h4, ul, li {
   .sctn-wrp.bg-video .sctn {
     background: url("images/bg-overlay-d.png") center top no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .sctn-wrp.bg-video .sctn {
+    padding-left: 100px;
+    padding-left: 10%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sctn-wrp.bg-video .sctn {
+    padding: 0 100px;
+    padding: 0 10%;
   }
 }
 .sctn-wrp.bg-video .sctn .content {
   padding-top: 75px;
   color: white;
-  max-width: 1200px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1000px) {
   .sctn-wrp.bg-video .sctn .content {
-    padding-top: 150px;
+    padding-top: 200px;
     display: flex;
     align-items: flex-end;
   }
 }
-@media screen and (min-width: 1000px) {
-  .sctn-wrp.bg-video .sctn .content .left-side {
-    padding: 0 0 150px 100px;
+@media screen and (min-width: 1200px) {
+  .sctn-wrp.bg-video .sctn .content {
+    padding-top: 230px;
+    max-width: 1400px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1000px) {
   .sctn-wrp.bg-video .sctn .content .left-side {
-    padding: 0 0 200px 0;
+    padding-bottom: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sctn-wrp.bg-video .sctn .content .left-side {
+    padding-bottom: 200px;
   }
 }
 .sctn-wrp.bg-video .sctn .content .left-side h1 {
   font-size: 40px;
   text-align: center;
   margin: 0 auto;
+  line-height: 1.1;
   padding: 50px;
   font-weight: normal;
 }
@@ -440,9 +458,9 @@ p, h1, h2, h3, h4, ul, li {
 @media screen and (min-width: 1000px) {
   .sctn-wrp.bg-video .sctn .content .left-side h1 {
     padding: 0;
+    margin: 0;
     margin-bottom: 75px;
     font-size: 65px;
-    line-height: 1.2;
     text-align: left;
   }
 }

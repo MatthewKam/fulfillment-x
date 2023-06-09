@@ -84,6 +84,15 @@ $(function(){
   $('.close-contact').on('click', function(){
     $('.popup-contact-wrp').removeClass('show');
   })
-
+  function showVideo(className){
+    if($(className)[0]){$(className)[0].play();};
+  }
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    console.log('mobile device');
+    showVideo('.bg-video-player');
+    showVideo('.orbit-video-player');
+    showVideo('.lft-sd .bg-amazon-player');
+    showVideo('.rght-sd .bg-amazon-player');
+  }
   console.log('loaded');
 })

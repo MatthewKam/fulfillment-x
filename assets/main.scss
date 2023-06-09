@@ -395,35 +395,48 @@ p, h1, h2, h3, h4, ul, li{
   .sctn{
     background:url('images/bg-overlay-m.png')center top no-repeat;
     background-size:cover;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     z-index: 222;
     @media screen and (min-width: 640px) {
       background:url('images/bg-overlay-d.png')center top no-repeat;
       background-size:cover;
-      background-color: rgba(0,0,0,.6);
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+    @media screen and (min-width: 1000px) {
+      padding-left: 100px;
+      padding-left: 10%;
+    }
+    @media screen and (min-width: 1200px) {
+      padding:0 100px;
+      padding:0 10%;
     }
     .content{
       padding-top: 75px;
       color:white;
-      max-width: 1200px;
       margin: 0 auto;
       @media screen and (min-width: 1000px) {
-        padding-top: 150px;
+        padding-top: 200px;
         display: flex;
         align-items: flex-end;    
       }
+      @media screen and (min-width: 1200px) {
+        padding-top: 230px;
+        max-width: 1400px;
+      }
       .left-side{
         @media screen and (min-width: 1000px) {
-          padding: 0 0 150px 100px;
+          padding-bottom: 150px;
         }
-        @media screen and (min-width: 1300px) {
-          padding: 0 0 200px 0;
+        
+        @media screen and (min-width: 1200px) {
+          padding-bottom: 200px;
         }
         h1{
           font-size: 40px;
           text-align: center;
           margin: 0 auto;
+          line-height: 1.1;
           padding: 50px;
           font-weight: normal;
           @media screen and (min-width: 640px) {
@@ -432,9 +445,9 @@ p, h1, h2, h3, h4, ul, li{
           }
           @media screen and (min-width: 1000px) {
             padding: 0;
+            margin:0;
             margin-bottom: 75px;
             font-size: 65px;
-            line-height: 1.2;
             text-align: left;
           }
   
