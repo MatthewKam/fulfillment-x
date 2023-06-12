@@ -15,6 +15,8 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	</head>
 	<body>
 		<div class="header-wrp">
@@ -182,7 +184,7 @@
 						</div>
 					</div>
 					<div class="list-view">
-						<ul>
+						<ul class="category-slider">
 							<li class="active supplements-tab" data-color="green">
 								<div class="svg-img">
 									<svg width="37" height="33">
@@ -508,5 +510,36 @@
 				</div>
 			</div>
 		</div>
+    <script>
+      $(document).ready(function(){
+        $('.category-slider').slick({
+          centerMode: true,
+          swipeToSlide: true,
+          slidesToShow: 1,
+          slidesPerRow: 3,
+          arrows: false, 
+          focusOnSelect: true,
+          vertical:true,
+          verticalSwiping:true,
+          infinite:false,
+          mobileFirst:true,
+          responsive: [{
+            breakpoint: 800,
+            settings: "unslick" // destroys slick
+          }]
+        });
+        // On after slide change
+        $('.category-slider').on('afterChange', function(event, slick, currentSlide){
+          function changeImage(className){
+            $(`.exploding-view.${className}.${$(window).width() < 800 ?'mobile': 'desktop'}`)
+              .addClass(`${$(window).width() < 800 ? '': 'animate__fadeInLeft'}`);
+          }
+          $('.sctn-wrp.categories .list-view li').removeClass('active');
+          const color = $(`.category-slider li[data-slick-index="${currentSlide}"]`).attr('data-color');
+          $('.category-slider .slick-slide.slick-current.slick-center').addClass('active');
+          $('.sctn-wrp.categories .content').attr('class', `content`).addClass(color);
+        });
+      });
+    </script>
 	</body>
 </html>

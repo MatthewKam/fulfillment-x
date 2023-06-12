@@ -284,12 +284,34 @@ $hoverGreen:'#72D085';
         background-color: #323232;
         padding: 40px;
         padding-top: 150px;
+        // -ms-scroll-snap-type: both mandatory;
+        // scroll-snap-type: both mandatory;
+        // height: 200px;
+        // overflow: auto;
+        // -webkit-overflow-scrolling: touch;
+        // -ms-scroll-snap-type: mandatory;
+        // scroll-snap-type: mandatory;
+        // -ms-scroll-snap-points-y: repeat(300px);
+        // scroll-snap-points-y: repeat(300px);
+        // -ms-scroll-snap-points-x: repeat(300px);
+        // scroll-snap-points-x: repeat(300px);
+        // &::-webkit-scrollbar {
+        //   display: none;
+        // }
         @media screen and (min-width: 800px) {
           padding: 0;
           display: flex;
           justify-content: center;
           align-items: center;
           height: 740px;
+          overflow: auto;
+          -webkit-overflow-scrolling:unset;
+          -ms-scroll-snap-type: unset;
+          scroll-snap-type: unset;
+          -ms-scroll-snap-points-y: unset;
+          scroll-snap-points-y: unset;
+          -ms-scroll-snap-points-x: unset;
+          scroll-snap-points-x: unset;
         }
         @media screen and (min-width: 1000px) {
           justify-content: flex-end;
@@ -307,6 +329,23 @@ $hoverGreen:'#72D085';
           margin: 0 auto;
           z-index: 111;
           position: relative;
+          -ms-scroll-snap-type: both mandatory;
+          scroll-snap-type: both mandatory;
+          height: 250px;
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
+          -ms-scroll-snap-type: mandatory;
+          scroll-snap-type: mandatory;
+          -ms-scroll-snap-points-y: repeat(300px);
+          scroll-snap-points-y: repeat(300px);
+          -ms-scroll-snap-points-x: repeat(300px);
+          scroll-snap-points-x: repeat(300px);
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          @media screen and (min-width:800px) {
+            height: unset;
+          }
           @media screen and (min-width: 1000px) {
             max-width: 400px;
             margin:0;
@@ -317,12 +356,20 @@ $hoverGreen:'#72D085';
           @media screen and (min-width: 1300px) {
             max-width: 600px;
           }
-
+          
           li{
+            scroll-snap-align: center;
             display: flex;
             align-items: center;
-            margin-bottom: 45px;
             cursor:pointer;
+            scroll-snap-stop: normal;
+            justify-content: center;
+            position: relative;
+            height: 80px;
+            @media screen and (min-width:800px) {
+              margin-bottom: 45px;
+              height: unset;
+            }
   
             .svg-img{
               width: 40px;
@@ -768,3 +815,48 @@ $hoverGreen:'#72D085';
   }
 }
 //End of Steps 
+
+.align-center .element {
+  scroll-snap-align: center;
+}
+.container {
+  height: 360px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: repeat(300px);
+  scroll-snap-points-y: repeat(300px);
+  -ms-scroll-snap-points-x: repeat(300px);
+  scroll-snap-points-x: repeat(300px);
+}
+.element {
+  width: 300px;
+  height: 300px;
+  scroll-snap-stop: normal;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.element code {
+  font-size: 13px;
+}
+.element:nth-child(1) {
+  background: #1d1e21;
+}
+.element:nth-child(2) {
+  background: #ee6620;
+}
+.element:nth-child(3) {
+  background: #777ba0;
+}
+.element:nth-child(4) {
+  background: #da1e62;
+}
+
+.both-mandatory {
+  scroll-snap-type: both mandatory;
+}
