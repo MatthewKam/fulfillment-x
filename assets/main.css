@@ -362,6 +362,12 @@ p, h1, h2, h3, h4, ul, li {
 .header-wrp.sticky .sticky-logo img {
   width: 165px;
 }
+.header-wrp.sticky.stopped {
+  display: none;
+}
+.header-wrp.sticky.stopped.hover {
+  display: block;
+}
 
 .sctn-wrp.bg-video {
   position: relative;

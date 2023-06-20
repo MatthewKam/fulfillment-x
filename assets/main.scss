@@ -365,6 +365,13 @@ p, h1, h2, h3, h4, ul, li{
       }
     }
   }
+
+  &.sticky.stopped{
+    display:none;
+  }
+  &.sticky.stopped.hover{
+    display:block;
+  }
 }
 // End of Header
 // Video background

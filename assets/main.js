@@ -1,4 +1,9 @@
 $(function(){
+  // Get the header
+  const header = document.querySelector(".header-wrp");
+
+  // Get the offset position of the navbar
+  const sticky = header.offsetTop;
   $('.hambaga-btn').on('click', function(){
     if($(this).hasClass('close-btn')){
       $(this).removeClass('close-btn');
@@ -10,21 +15,33 @@ $(function(){
     }
   })
   window.onload = function() {stickyHeader()};
-  window.onscroll = function() {stickyHeader()};
+  // window.onscroll = function() {};
+  let isScrolling;
+  window.addEventListener('scroll', function ( event ) {
+    window.clearTimeout( isScrolling );
 
-  // Get the header
-  const header = document.querySelector(".header-wrp");
-
-  // Get the offset position of the navbar
-  const sticky = header.offsetTop;
-
+    isScrolling = setTimeout(function() {
+      window.pageYOffset > sticky 
+      ? header.classList.add("stopped")
+      : header.classList.remove("stopped", "sticky");
+      console.log( 'Scrolling has stopped.' );
+    }, 750);
+    header.classList.remove("stopped");
+    stickyHeader()
+  
+  }, false);
+  console.log('hover');
+  $('.header-wrp').on('mouseover', function(){
+    header.classList.add("hover");
+  })
+  $('.header-wrp').on('mouseout', function(){
+    header.classList.remove("hover");
+  })
   // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function stickyHeader() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
+    window.pageYOffset > sticky 
+      ? header.classList.add("sticky")
+      :header.classList.remove("sticky");
   }
 
   $('.sctn-wrp.categories .list-view li').on('click', function(){
