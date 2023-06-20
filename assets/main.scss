@@ -721,7 +721,7 @@ p, h1, h2, h3, h4, ul, li{
   }
   .popup-contact-content {
     max-width: 500px;
-    max-height: 100vh;
+    max-height: 95vh;
     overflow: scroll;
     width: 90%;
     background-color: white;
@@ -805,6 +805,7 @@ p, h1, h2, h3, h4, ul, li{
           button.get-started {
             width: 100%;
             margin-top: 30px;
+            padding: 15px 0;
           }
         }
 
