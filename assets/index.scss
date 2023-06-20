@@ -637,6 +637,8 @@ $hoverGreen:'#72D085';
     .content{
       padding: 80px 40px;
       padding-bottom: 110px;
+      max-width:1400px;
+      margin:0 auto;
       @media screen and (min-width: 1000px) {
         padding: 120px 40px;
         padding-bottom: 200px;

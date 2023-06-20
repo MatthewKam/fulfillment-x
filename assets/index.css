@@ -659,6 +659,8 @@
 .sctn-wrp.benefits .sctn .content {
   padding: 80px 40px;
   padding-bottom: 110px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1000px) {
   .sctn-wrp.benefits .sctn .content {
