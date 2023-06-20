@@ -300,20 +300,6 @@ $hoverGreen:'#72D085';
         background-color: #323232;
         padding: 40px;
         padding-top: 150px;
-        // -ms-scroll-snap-type: both mandatory;
-        // scroll-snap-type: both mandatory;
-        // height: 200px;
-        // overflow: auto;
-        // -webkit-overflow-scrolling: touch;
-        // -ms-scroll-snap-type: mandatory;
-        // scroll-snap-type: mandatory;
-        // -ms-scroll-snap-points-y: repeat(300px);
-        // scroll-snap-points-y: repeat(300px);
-        // -ms-scroll-snap-points-x: repeat(300px);
-        // scroll-snap-points-x: repeat(300px);
-        // &::-webkit-scrollbar {
-        //   display: none;
-        // }
         @media screen and (min-width: 800px) {
           padding: 0;
           display: flex;
@@ -339,7 +325,6 @@ $hoverGreen:'#72D085';
         }
 
         ul{
-          
           width:100%;
           max-width: 300px;
           margin: 0 auto;
@@ -385,6 +370,9 @@ $hoverGreen:'#72D085';
             @media screen and (min-width:800px) {
               margin-bottom: 45px;
               height: unset;
+            }
+            @media screen and (min-width:1000px) {
+              justify-content: flex-start;
             }
   
             .svg-img{

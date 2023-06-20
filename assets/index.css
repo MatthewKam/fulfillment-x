@@ -408,6 +408,11 @@
     height: unset;
   }
 }
+@media screen and (min-width: 1000px) {
+  .sctn-wrp.categories .sctn .content .list-view ul li {
+    justify-content: flex-start;
+  }
+}
 .sctn-wrp.categories .sctn .content .list-view ul li .svg-img {
   width: 40px;
   margin-right: 20px;
