@@ -167,10 +167,26 @@ $hoverGreen:'#72D085';
           display:inline-block;
         }
       }
-      video{
+      .orbit-video-player-wrapper{
+        z-index: 111;
+        pointer-events: none;
+        padding: 0;
+        height: 0;
+        width: 100%;
         max-width: 1100px;
         margin: 0 auto;
         display: block;
+        position: relative;
+        overflow: hidden;
+        video{
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          width: 100%;
+          height: 84.7%;
+        }
+      
       }
     }
   }

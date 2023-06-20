@@ -367,8 +367,6 @@ p, h1, h2, h3, h4, ul, li{
   }
 }
 // End of Header
-
-
 // Video background
 .sctn-wrp.bg-video{
   position:relative;
@@ -377,21 +375,32 @@ p, h1, h2, h3, h4, ul, li{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     height: 100%;
     width: 100%;
     z-index: 111;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    pointer-events: none;
+    padding: 0;
+
     video{
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
       z-index: 1;
-      object-fit: cover;
-      background-size: cover;
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      background-size: cover;
+      transform: translate(-50%, -50%);
+
+      @media screen and (min-width: 1600px) {
+        width: 100%;
+        height: 150%;
+      }
     }
   }
+
   .sctn{
     background:url('images/bg-overlay-m.png')center top no-repeat;
     background-size:cover;
