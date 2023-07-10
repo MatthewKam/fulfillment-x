@@ -146,6 +146,7 @@
         text-align: center;
         color: white;
         padding: 100px 30px;
+        padding-bottom:50px;
         max-width: 800px;
         margin: 0 auto;
         @media screen and (min-width: 1000px) {
@@ -430,7 +431,8 @@
             &.active{
               .tab-content{
                 @media screen and (min-width: 1000px) {
-                  border-top-left-radius:0;
+                  // border-top-lgit aeft-radius:0;
+                  border-top-left-radius:15px;
                   border-top-right-radius:15px;
                 }
               }

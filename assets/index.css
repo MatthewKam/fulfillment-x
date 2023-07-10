@@ -330,11 +330,8 @@
     height: 740px;
     overflow: auto;
     -webkit-overflow-scrolling: unset;
-    -ms-scroll-snap-type: unset;
     scroll-snap-type: unset;
-    -ms-scroll-snap-points-y: unset;
     scroll-snap-points-y: unset;
-    -ms-scroll-snap-points-x: unset;
     scroll-snap-points-x: unset;
   }
 }
@@ -356,16 +353,12 @@
   margin: 0 auto;
   z-index: 111;
   position: relative;
-  -ms-scroll-snap-type: both mandatory;
   scroll-snap-type: both mandatory;
   height: 250px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -ms-scroll-snap-type: mandatory;
   scroll-snap-type: mandatory;
-  -ms-scroll-snap-points-y: repeat(300px);
   scroll-snap-points-y: repeat(300px);
-  -ms-scroll-snap-points-x: repeat(300px);
   scroll-snap-points-x: repeat(300px);
 }
 .sctn-wrp.categories .sctn .content .list-view ul::-webkit-scrollbar {
@@ -876,11 +869,8 @@
   height: 360px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  -ms-scroll-snap-type: mandatory;
   scroll-snap-type: mandatory;
-  -ms-scroll-snap-points-y: repeat(300px);
   scroll-snap-points-y: repeat(300px);
-  -ms-scroll-snap-points-x: repeat(300px);
   scroll-snap-points-x: repeat(300px);
 }
 
@@ -917,6 +907,5 @@
 }
 
 .both-mandatory {
-  -ms-scroll-snap-type: both mandatory;
-      scroll-snap-type: both mandatory;
+  scroll-snap-type: both mandatory;
 }/*# sourceMappingURL=index.css.map */
